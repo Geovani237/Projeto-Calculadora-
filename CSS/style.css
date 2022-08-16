@@ -1,0 +1,31 @@
+label{
+    display:flex;
+}
+body{
+    background-color: grey;
+   
+}
+#corpo{
+    border-style: solid;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 12px;
+}
+hr{
+    border-color:black ;
+}
+h1{
+    text-align: center;
+}
+input{
+    width:100% ;
+}
+select{
+    width: 100%;
+}
+.divs{
+    padding: 10px;
+}
+h2{
+    margin-top: 50px;
+}

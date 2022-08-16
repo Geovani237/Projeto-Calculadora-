@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../CSS/style.css" > 
+</head>
+
+<body>
+    <div id="corpo">
+
+        <h1>Calculadora</h1>
+        <hr>
+        <div class="divs">
+            <label for ="num1">Primeiro Número:</label>
+            <input id="num1" type="number"  placeholder="Digite aqui o primeiro número">
+        </div>
+        <div class="divs">
+            <label for="operacao">Escolha uma operação:</label>
+            <select id="operacao" name="operacao">
+                <option value="selecione">Selecione</option>
+                <option value="soma">Soma</option>
+                <!--<option value="subtracao">Subtração</option>
+                <option value="divisao">Divisão</option>
+                <option value="multiplicacao">Multiplicação</option> -->
+            </select>
+        </div>
+        <div class="divs">
+            <label for="num2">Segundo Número:</label>
+            <input id="num2" type="number"  placeholder="Digite aqui o segundo número">
+        </div>
+        <div class="divs">
+            <button onclick ="calculos(document.querySelector('#num1').value,document.querySelector('#num2').value)">Calcular</button>
+            <hr>
+            <h2>Resultado:</h2>
+            <hr>
+        </div>
+        
+        <script src="../JAVASCRIPT/script.js"></script>
+    </div>
+</body>
+
+</html>
