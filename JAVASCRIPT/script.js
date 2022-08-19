@@ -43,8 +43,8 @@ function calc(num1,num2){
       }
       //-----VERDE E VERMELHO NÚMEROS------
       if(n3 > 0){
-        document.getElementsByTagName("h2").style.color = 'green';
-        document.querySelector("#res").innerHTML ="Resultado: " + n3
+        document.getElementById('res').style.color = 'green';
+        document.querySelector("#res").innerHTML = n3
       }
     //document.querySelector("#res").innerHTML ="Resultado: " + n3
   
