@@ -29,3 +29,6 @@ select{
 h2{
     margin-top: 50px;
 }
+#res{
+    display: inline-block;
+}
