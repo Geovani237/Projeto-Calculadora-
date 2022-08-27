@@ -1,5 +1,4 @@
 function soma(numero1, numero2){
-   let resultado = numero1 + numero2;
-   console.log("eai meu chapa");
+   let resultado = parseFloat (numero1) + parseFloat (numero2);
    document.querySelector("#res").innerHTML = resultado;
 }

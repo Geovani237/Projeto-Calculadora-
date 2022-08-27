@@ -3,7 +3,6 @@ function calcula(number1, number2){
   number1 = parseFloat(numero1);
   let numero2 = document.querySelector("#number2").value;
   number2 = parseFloat(numero2);
-  let resultado = document.querySelector("#res").value
   //let resultado = document.querySelector("#res").value;
   let operação = document.querySelector("#operacao").value;
 
@@ -11,11 +10,21 @@ function calcula(number1, number2){
     alert("Nenhuma operação selecionada!!!");
   }
   if(operação === "soma"){
-    soma();
-    return resultado;
-
+    soma(numero1, numero2);
+    return soma;
   }
-  
+  if(operação === "subtracao"){
+    subtracao(numero1, numero2);
+    return subtracao;
+  }
+  if(operação === "divisao"){
+    divisao(numero1, numero2);
+    return divisao;
+  }
+  if(operação === "multiplicacao"){
+    multiplicacao(numero1, numero2);
+    return multiplicacao;
+  }
  /*)
   let n1, n2, n3, oper
 
