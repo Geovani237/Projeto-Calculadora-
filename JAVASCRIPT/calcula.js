@@ -1,10 +1,22 @@
-function calcula(){
-  let number1 = document.querySelector("#num1").value;
-  let number2 = document.querySelector("#num2").value;
-  console.log(number1);
-  console.log(number2);
+function calcula(number1, number2){
+  let numero1 = document.querySelector("#number1").value;
+  number1 = parseFloat(numero1);
+  let numero2 = document.querySelector("#number2").value;
+  number2 = parseFloat(numero2);
+  let resultado = document.querySelector("#res").value
+  //let resultado = document.querySelector("#res").value;
+  let operação = document.querySelector("#operacao").value;
+
+  if(operação === "selecione"){
+    alert("Nenhuma operação selecionada!!!");
+  }
+  if(operação === "soma"){
+    soma();
+    return resultado;
+
+  }
   
- /*
+ /*)
   let n1, n2, n3, oper
 
     n1 = document.querySelector("#num1").value;
